@@ -1,0 +1,69 @@
+@font-face {
+	font-family: "Flaticon";
+	src: url("../fonts/flaticon.eot");
+	src: url("../fonts/flaticon.eot#iefix") format("embedded-opentype"),
+	url("../fonts/flaticon.woff") format("woff"),
+	url("../fonts/flaticon.ttf") format("truetype"),
+	url("../fonts/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+    font-style: normal;    
+	margin-left: 20px;
+}.flaticon-banknote:before {
+	content: "\e000";
+}
+.flaticon-banknotes:before {
+	content: "\e001";
+}
+.flaticon-big58:before {
+	content: "\e002";
+}
+.flaticon-facebook55:before {
+	content: "\e003";
+}
+.flaticon-favorite21:before {
+	content: "\e004";
+}
+.flaticon-hand129:before {
+	content: "\e005";
+}
+.flaticon-handshake1:before {
+	content: "\e006";
+}
+.flaticon-iphone26:before {
+	content: "\e007";
+}
+.flaticon-like:before {
+	content: "\e008";
+}
+.flaticon-linkedin12:before {
+	content: "\e009";
+}
+.flaticon-magnifier13:before {
+	content: "\e00a";
+}
+.flaticon-multiple25:before {
+	content: "\e00b";
+}
+.flaticon-phone12:before {
+	content: "\e00c";
+}
+.flaticon-social19:before {
+	content: "\e00d";
+}
+.flaticon-users6:before {
+	content: "\e00e";
+}
+.flaticon-verification5:before {
+	content: "\e00f";
+}
+.flaticon-43:before {
+	content: "\e010";
+}
+.flaticon-visa6:before {
+	content: "\e011";
+}

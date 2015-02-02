@@ -60,20 +60,25 @@ p {
 .navbar-default {
 	background-color: #ffffff;
 	border-color: #e7e7e7;
-	border-bottom: #1abc9c solid 3px;
+	border-bottom: #f2b910 solid 3px;
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   	color: #ffffff;
-	background-color: #1abc9c
+	background-color: #f2b910;
 }
 
 .navbar-brand licon {
-	font-size: 20px;
-	padding-bottom: 15px;
 	vertical-align: middle;
+}
+
+.advantage-header {
+	font-family: 'Raleway', sans-serif;
+	font-size: 22px;
+	color: #333;
+	margin-bottom: 10px;
 }
 
 .accordion-heading {
@@ -89,7 +94,7 @@ p {
 .accordion-heading a:hover {
 	font-family: 'Raleway', sans-serif;
 	font-size: 22px;
-	color: #1abc9c;
+	color: #4d9742;
 	text-decoration: none;
 }
 
@@ -123,7 +128,7 @@ p {
 /* ========== WRAP Configuration ========== */
 
 #headerwrap {
-	background: url(../img/header_bg.jpg) no-repeat center top;
+	background: url(../img/bg.jpg) no-repeat center top;
 	margin-top: -50px;
 	padding-top:120px;
 	text-align:center;
@@ -149,13 +154,14 @@ p {
 	font-weight: 900;
 	line-height: 50px;
 	text-align: left;
-	padding-top: 30px;
+	padding-top: 10px;
 	letter-spacing: 3px;
 }
 
 #headerwrap p {
 	color: #ffffff;
 	font-size: 18px;
+	margin-top:20px;
 	line-height: 24px;
 	text-align: left;
 	letter-spacing: 1px;
@@ -256,6 +262,36 @@ p {
 	letter-spacing: 3px;
 }
 
+#section04 {
+	background: url(../img/section04.jpg) no-repeat center top;
+	padding-top:80px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 400px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#section04 h1 {
+	color: #ffffff;
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 50px;
+	text-align: center;
+	padding-top: 30px;
+	letter-spacing: 3px;
+}
+
 #registerwrap {
 	/*background-color: #ffffff;*/
 	color: #ffffff;
@@ -263,7 +299,7 @@ p {
 }
 
 #registerwrap h1 {
-	color: #1abc9c;
+	color: #4d9742;
 	font-size: 40px;
 	font-weight: 400;
 	line-height: 50px;
@@ -300,7 +336,7 @@ p {
 
 licon {
 	font-size: 60px;
-	color: #1abc9c;
+	color: #4d9742;
 	padding: 20px;
 	vertical-align: middle;
 }
@@ -536,7 +572,7 @@ licon {
     position: absolute;
     top: 0;
     left: 0;
-    background: #1abc9c;
+    background: #4d9742;
     text-transform: uppercase;
     font-size: 15px;
     font-weight: bold;
@@ -603,7 +639,7 @@ licon {
     font-weight: bold;
     padding: 15px 10px;
     color: white;
-    background: #1abc9c;
+    background: #4d9742;
     font-family: 'Lato', sans-serif;
     letter-spacing: 2px;
 }
@@ -619,7 +655,7 @@ licon {
 }
 
 .icon:hover {
-	color: #1abc9c;
+	color: #f2b910;
 	text-decoration: none
 }
 
