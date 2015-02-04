@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+    <link rel="shortcut icon" href="favicon.ico">
 
     <title>Diligências Já</title>
 
@@ -27,7 +27,7 @@
   </head>
 
   <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
-
+  	<div id="fb-root"></div>
     <!-- Fixed navbar -->
     <div id="navbar-main">
     <div class="navbar navbar-default navbar-fixed-top">
@@ -59,7 +59,7 @@
 	<div id="headerwrap">
 		<div class="container">
 			<div class="col-lg-8">
-				<h1>SOLICITE E RECEBA DILIGÊNCIAS EM QUALQUER LUGAR! BAIXE AGORA NOSSO APP!</h1>
+				<h1>SOLICITE E RECEBA GRÁTIS DILIGÊNCIAS EM QUALQUER LUGAR!</h1>
 				<p class="hidden-xs">O Diligências já otimiza o tempo do advogado, permitindo que ele busque, contrate e pague serviços de qualidade em apenas poucos cliques.</p>
 			</div><!-- col-lg-4 -->
 			<div class="col-lg-4" >
@@ -222,7 +222,7 @@
 		            <p style="text-align: justify">Realize seus pagamentos pelo PagSeguro, uma plataforma de credibilidade nacional!</p>
 		            <br>
 		            <div class="advantage-header">Comodidade</div>
-		            <p style="text-align: justify">Você pode fazer TUDO isso quando e onde quiser: utilizando nosso aplicativo mobile;</p>
+		            <p style="text-align: justify">Você pode fazer tudo isso quando e onde quiser: utilizando nosso aplicativo mobile;</p>
 				</div>
 
 				<div class="col-lg-4" style="text-align: left">
@@ -270,25 +270,40 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
-					<h1>Cadastre-se em nosso site e seja o primeiro a conhecer nossas atualizações!</h1>					
+					<h1>Cadastre-se gratuitamente em nosso site e seja o primeiro a conhecer nossas atualizações!</h1>					
+					<br>
+					<br>
 				</div>
 			</div>	
 			
 			<div class="row">
-				<div class="col-lg-offset-3 col-lg-9">
-					<form class="form-horizontal" role="form">
+				<div id="form_cadastro_sucesso" class="col-lg-8 col-lg-offset-2">
+					<h2 class="centered">Seu registro foi realizado!</h2><br/><br/>					
+				</div>
+				<div id="form_cadastro" class="col-lg-offset-3 col-lg-9">
 					  <div class="form-group">
 					    <div class="col-lg-8">
-					      <input type="email" class="form-control" id="inputEmail1" placeholder="seu@email.com">
+					    	<form class="form-horizontal ss-form2" target="output_frame" action="https://docs.google.com/a/diligenciasja.com.br/forms/d/1Cwp09D6qwCKZ0KrdtPY8mETeDP5lVp31hDT5p9-Pvz4/formResponse?embedded=true" id="ss-form" onsubmit method="POST">
+							  <div class="form-group">
+							    <label for="entry_668134968" class="col-sm-2 control-label">Nome</label>
+							    <div class="col-sm-10">
+							      <input type="text" required class="form-control" id="entry_668134968" name="entry.668134968" placeholder="informe seu nome">
+							    </div>
+							  </div>
+							  <div class="form-group">
+							    <label for="entry_2113568947" class="col-sm-2 control-label">E-mail</label>
+							    <div class="col-sm-10">
+							      <input type="email" required class="form-control" id="entry_2113568947" name="entry.2113568947" placeholder="seu@email.com">
+							    </div>
+							  </div>							  
+							  <div class="form-group centered">
+							    <div class="col-sm-offset-2 col-sm-10">
+							      <button type="submit" class="btn btn-theme">Registrar</button>
+							    </div>
+							  </div>
+							</form>
 					    </div>
 					  </div>
-					  <div class="form-group">
-					    <div class="col-lg-8 centered">
-					    <br>
-					      <a type="submit" class="btn-lg btn-theme">Registrar</a>
-					    </div>
-					  </div>
-					</form>
 				</div>	<!-- col-lg-9 -->		
 			
 			</div><!-- row -->
@@ -312,12 +327,87 @@
 		<div class="row">
 		<br>
 		<br>
-			<div class="col-lg-6 col-lg-offset-3">
-				<p align="justify">Incluir enquete!</p> 
+			<div id="form_sucesso" class="col-lg-8 col-lg-offset-2" style="display: none">
+				<h2 class="centered">Sua resposta foi registrada!</h2><br/>
+				<div align="center">
+					<div class="fbshare" onclick="javascript:fbShare('http://www.diligenciasja.com.br', 'Diligências Já', 'Descrição sucinta do site', 'http://diligenciasja.com.br/assets/img/logo.png', 520, 350)"></div>
+				</div>
+			</div>
+			
+			<div id="form_enquete" class="col-lg-8 col-lg-offset-2">
 				
+				<h2 class="centered">Qual o preço mínimo que você considera justo para as seguintes diligências:</h2>
+				<br>
+				<br>
+				<iframe name="output_frame" style="display: none" src="" id="output_frame" width="100px" height="100px"></iframe>								
+
+				<form class="form-horizontal ss-form1" target="output_frame" action="https://docs.google.com/forms/d/1mhDAYdODihp8dzpdvQrRegUhcMDoymq9vfTq-IVbXcs/formResponse?embedded=true" id="ss-form" onsubmit method="POST">
+				  <div class="form-group">
+				    <label for="entry_492650300" class="col-sm-4 control-label">Audiência</label>
+				    <div class="col-sm-4">
+				    	<div class="input-group">
+					      <div class="input-group-addon">R$</div>
+					      <input type="text" class="form-control bfh-number" id="entry_492650300" name="entry.492650300" placeholder="Valor" maxlength="4">
+					      <div class="input-group-addon">.00</div>
+				    	</div>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="entry_1896383288" class="col-sm-4 control-label">Cargas</label>
+				    <div class="col-sm-4">
+				    	<div class="input-group">
+					      <div class="input-group-addon">R$</div>
+					      <input type="text" class="form-control bfh-number" id="entry_1896383288" name="entry.1896383288" placeholder="Valor" maxlength="4">
+					      <div class="input-group-addon">.00</div>
+				    	</div>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="entry_44462783" class="col-sm-4 control-label">Cópias</label>
+				    <div class="col-sm-4">
+				    	<div class="input-group">
+					      <div class="input-group-addon">R$</div>
+					      <input type="text" class="form-control bfh-number" id="entry_44462783" name="entry.44462783" placeholder="Valor" maxlength="4">
+					      <div class="input-group-addon">.00</div>
+				    	</div>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="entry_1171603621" class="col-sm-4 control-label">Distribuição</label>
+				    <div class="col-sm-4">
+				    	<div class="input-group">
+					      <div class="input-group-addon">R$</div>
+					      <input type="text" class="form-control bfh-number" id="entry_1171603621" name="entry.1171603621" placeholder="Valor" maxlength="4">
+					      <div class="input-group-addon">.00</div>
+				    	</div>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="entry_1460268335" class="col-sm-4 control-label">Protocolo</label>
+				    <div class="col-sm-4">
+				    	<div class="input-group">
+					      <div class="input-group-addon">R$</div>
+					      <input type="text" class="form-control bfh-number" id="entry_1460268335" name="entry.1460268335" placeholder="Valor" maxlength="4">
+					      <div class="input-group-addon">.00</div>
+				    	</div>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="entry_1187749956" class="col-sm-4 control-label">Demais Diligências</label>
+				    <div class="col-sm-6">
+				    	<div class="input-group">
+				    	  <textarea id="entry_1187749956" name="entry.1187749956" class="form-control" rows="3" cols="40" placeholder="Informe o tipo de diligência e o seu respectivo valor" maxlength="200"></textarea>
+				    	</div>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-sm-offset-4 col-sm-4 centered">
+				      <button type="submit" class="btn btn-default">Enviar</button>
+				    </div>
+				  </div>
+				</form>				
 			</div><!-- col-lg-6 -->
 		</div><!-- row -->	
-		
 		<br>
 		<br>
 		<br>	
@@ -340,7 +430,6 @@
 		</div>
 	</div>
 	
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -350,9 +439,52 @@
     <script type="text/javascript" src="assets/js/smoothscroll.js"></script> 
 	<script type="text/javascript" src="assets/js/jquery-func.js"></script>
 	<script type="text/javascript" src="assets/js/retina.js"></script>
+	<script type="text/javascript" src="assets/js/forcenumeric.js"></script>
+	<script type="text/javascript" src="assets/js/google-spreadsheet.js"></script>
+	<script type="text/javascript" src="assets/js/fbshare.js"></script>
+	<script type="text/javascript" src="assets/js/jqBootstrapValidation.js"></script>
+	
 	<script>
 		$(function() {
 			AppShowcase.init();
+			$(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
+			$("#audiencia").ForceNumericOnly();
+			$("#cargas").ForceNumericOnly();
+			$("#copias").ForceNumericOnly();
+			$("#distribuicao").ForceNumericOnly();
+			$("#protocolo").ForceNumericOnly();
+			$("#demais").ForceNumericOnly();
+			$(".ss-form1").submit(function(ev)
+			{
+				$("#form_enquete").fadeOut(400, "linear", function() {
+					$("#form_sucesso").fadeIn();
+				});
+				this.submit();
+			});
+
+			$(".ss-form2").submit(function(ev)
+			{
+				$("#form_cadastro").fadeOut(400, "linear", function() {
+					$("#form_cadastro_sucesso").fadeIn();
+				});
+				this.submit();
+			});
+
+			window.fbAsyncInit = function() {
+		        FB.init({
+		          appId      : '332029126988070',
+		          xfbml      : true,
+		          version    : 'v2.1'
+		        });
+		      };
+
+		      (function(d, s, id){
+		         var js, fjs = d.getElementsByTagName(s)[0];
+		         if (d.getElementById(id)) {return;}
+		         js = d.createElement(s); js.id = id;
+		         js.src = "http://connect.facebook.net/en_US/sdk.js";
+		         fjs.parentNode.insertBefore(js, fjs);
+		       }(document, 'script', 'facebook-jssdk'));
 		});
 	</script>
   </body>
