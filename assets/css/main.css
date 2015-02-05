@@ -771,6 +771,10 @@ licon {
 		margin-left: -10px;
 	}
 
+	.phonefront {
+		text-align: center;
+	}
+
 	.ac-wrapper h2 { 
 		width: 100%;
 		text-align: center;
